@@ -1,8 +1,8 @@
 package io.example.moviedatabase.data.api
 
-import io.example.moviedatabase.data.model.MovieModelList
-import io.example.moviedatabase.data.model.PeopleModelList
-import io.example.moviedatabase.data.model.TvShowModelList
+import io.example.moviedatabase.data.model.movie.MovieModelList
+import io.example.moviedatabase.data.model.people.PeopleModelList
+import io.example.moviedatabase.data.model.tvshow.TvShowModelList
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query
