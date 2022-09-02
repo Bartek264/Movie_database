@@ -16,6 +16,6 @@ interface PeopleDao {
     suspend fun deleteAllPeoples()
 
     @Query("SELECT * FROM famous_people")
-    suspend fun getAllPeoples(peoples: List<PeopleModel>)
+    suspend fun getAllPeoples(): List<PeopleModel>
 
 }
