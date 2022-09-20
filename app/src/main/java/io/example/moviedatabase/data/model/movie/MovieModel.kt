@@ -1,40 +1,22 @@
 package io.example.moviedatabase.data.model.movie
 
-
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import com.google.gson.annotations.SerializedName
 
 @Entity(tableName = "movie_table")
 data class MovieModel(
-
-    @PrimaryKey
-    @SerializedName("id")
+    @PrimaryKey(autoGenerate = true)
     val id: Int,
-    @SerializedName("adult")
-    val adult: Boolean,
-    @SerializedName("backdrop_path")
-    val backdropPath: String,
-    @SerializedName("genre_ids")
-    val genreIds: List<Int>,
-    @SerializedName("original_language")
-    val originalLanguage: String,
-    @SerializedName("original_title")
-    val originalTitle: String,
-    @SerializedName("overview")
-    val overview: String,
-    @SerializedName("popularity")
-    val popularity: Double,
-    @SerializedName("poster_path")
-    val posterPath: String,
-    @SerializedName("release_date")
-    val releaseDate: String,
-    @SerializedName("title")
-    val title: String,
-    @SerializedName("video")
-    val video: Boolean,
-    @SerializedName("vote_average")
-    val voteAverage: Double,
-    @SerializedName("vote_count")
-    val voteCount: Int
+    val adult: Boolean? = null,
+    val backdrop_path: String? = null,
+    val original_language: String? = null,
+    val original_title: String? = null,
+    val overview: String? = null,
+    val popularity: Double? = null,
+    val poster_path: String? = null,
+    val release_date: String? = null,
+    val title: String? = null,
+    val video: Boolean? = null,
+    val vote_average: Double? = null,
+    val vote_count: Int? = null
 )
