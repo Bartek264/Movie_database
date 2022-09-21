@@ -17,10 +17,10 @@
         android:theme="@style/Theme.MovieDatabase"
         tools:targetApi="31">
         <activity
-            android:name=".view.PeopleActivity"
+            android:name=".view.people.PeopleActivity"
             android:exported="false" />
         <activity
-            android:name=".view.MovieActivity"
+            android:name=".view.movie.MovieActivity"
             android:exported="false" />
         <activity
             android:name=".view.TvShowActivity"

@@ -1,4 +1,4 @@
-package io.example.moviedatabase.view.adapter
+package io.example.moviedatabase.view.movie
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -15,7 +15,8 @@ class MovieAdapter: RecyclerView.Adapter<MyViewHolder>() {
 
     fun updateList(list: List<MovieModel>) {
         movieList.clear()
-        this.movieList = ArrayList(list)
+        this.movieList.addAll(list)
+        notifyDataSetChanged()
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
@@ -37,7 +38,7 @@ class MovieAdapter: RecyclerView.Adapter<MyViewHolder>() {
 
 }
 
-class MyViewHolder(val binding: ListItemBinding): RecyclerView.ViewHolder(binding.root) {
+class MyViewHolder(private val binding: ListItemBinding): RecyclerView.ViewHolder(binding.root) {
 
     fun binding(movie: MovieModel) {
         binding.itemTitle.text = movie.title

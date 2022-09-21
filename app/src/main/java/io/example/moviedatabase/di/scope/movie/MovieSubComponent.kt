@@ -1,7 +1,7 @@
 package io.example.moviedatabase.di.scope.movie
 
 import dagger.Subcomponent
-import io.example.moviedatabase.view.MovieActivity
+import io.example.moviedatabase.view.movie.MovieActivity
 
 @MovieScope
 @Subcomponent(modules = [MovieModel::class])

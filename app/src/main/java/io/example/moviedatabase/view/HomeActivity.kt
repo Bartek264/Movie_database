@@ -6,6 +6,8 @@ import android.os.Bundle
 import androidx.databinding.DataBindingUtil
 import io.example.moviedatabase.R
 import io.example.moviedatabase.databinding.ActivityHomeBinding
+import io.example.moviedatabase.view.movie.MovieActivity
+import io.example.moviedatabase.view.people.PeopleActivity
 
 class HomeActivity : AppCompatActivity() {
 
