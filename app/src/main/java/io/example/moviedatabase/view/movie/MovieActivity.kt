@@ -17,6 +17,7 @@ class MovieActivity : AppCompatActivity() {
 
     @Inject
     lateinit var factory: MovieViewModelFactory
+
     private lateinit var movieViewModel: MovieViewModel
     private lateinit var binding: ActivityMovieBinding
 
